@@ -7,6 +7,9 @@
 
 *.log
 
+lib/*
+!lib/libcannonball.so_is_placed_here.txt
+
 roms/*
 !roms/roms.txt
 
