@@ -1,0 +1,27 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+    simple:
+        format: "%(asctime)s|%(levelname)s: %(message)s"
+        datefmt: "%Y%m%d|%H:%M:%S"
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: simple
+        stream: ext://sys.stdout
+
+    warning_file_handler:
+        class: logging.handlers.RotatingFileHandler
+        level: WARNING
+        formatter: simple
+        filename: warnings.log
+        maxBytes: 10485760 # 10MB
+        backupCount: 20
+        encoding: utf8
+
+root:
+    level: INFO
+    handlers: [console, warning_file_handler]

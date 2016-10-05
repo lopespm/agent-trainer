@@ -1,0 +1,2 @@
+# Use TkAgg, instead of the default MacOSX backend (on OSX), which does not work properly on a virtual enviroment when the Python framework is not installed
+backend : TkAgg

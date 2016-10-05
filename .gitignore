@@ -1,0 +1,24 @@
+.DS_Store
+
+.env
+.idea
+
+*.pyc
+
+*.log
+
+roms
+
+build
+dist
+*.egg-info
+
+# Matplotlib
+fontList.cache
+
+# Virtualenv folder. Change if you have a project virtualenv with another name
+.venv
+
+# Tests coverage
+.coverage
+coverage.xml
