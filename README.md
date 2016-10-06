@@ -9,7 +9,7 @@
 
 Through [Deep Reinforcement Learning](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf), this agent can autonomously train itself to play [Out Run](https://en.wikipedia.org/wiki/Out_Run) and potentially be modified to play other games or perform tasks other than gaming.
 
-More details about the training process [in this blogpost](http://lopespm.github.io/machine_learning/2016/10/05/deep-reinforcement-learning-racing-game.html).
+More details about the training process [in this blogpost](http://lopespm.github.io/machine_learning/2016/10/06/deep-reinforcement-learning-racing-game.html).
 
 Built with Python and Tensorflow.
 
@@ -97,7 +97,7 @@ $ SESSION_ID="201609272034" make metrics-show
 For finer control, you can run the library module as a script. For example:
 
 ```bash
-python -m agent train-resume --ec2spot --resultspath /Users/pedro/alternative-results-folder -s 201609261533
+python -m agent play --ec2spot --resultspath /example/alternative-results-folder -s 201609261533
 ```
 
 Actions: `train-new`, `train-resume`, `play`, `visualize-tsne`, `metrics-show` or `metrics-export`
